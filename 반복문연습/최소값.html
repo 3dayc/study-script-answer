@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최소값</title>
+</head>
+
+<body>
+  <script>
+    // [52, 273, 103, 32, 57, 103, 31, 2]와 같은 숫자 배열이 주어질 때, 배열 내부에서 최소값을 찾는 코드를 만들어라
+    const num = [52, 273, 103, 32, 57, 103, 31, 2];
+    let minNum;
+    minFunc = () => {
+      minNum = num[0];
+      for (let i = 0; i < num.length; i++) {
+        if (num[i] < minNum) {
+          minNum = num[i];
+        }
+      }
+      console.log(minNum);
+    }
+    minFunc();
+  </script>
+</body>
+
+</html>
